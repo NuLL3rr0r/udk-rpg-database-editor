@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{253E4E25-0B67-4EF2-809D-7E5F235D88C9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RpgDbManager</RootNamespace>
+    <AssemblyName>RpgDbManager</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\Ability\AbilityDefinition.cs" />
+    <Compile Include="Data\Ability\AbilityTargetSelectionTypes.cs" />
+    <Compile Include="Data\Buffer\BufferDamage.cs" />
+    <Compile Include="Data\Buffer\BufferDefinition.cs" />
+    <Compile Include="Data\Buffer\BufferSpecialEffect.cs" />
+    <Compile Include="Data\Buffer\BufferSpecialEffectTypes.cs" />
+    <Compile Include="Data\Buffer\BufferStakingBehaviorTypes.cs" />
+    <Compile Include="Data\Buffer\CharacterPropertyModifier.cs" />
+    <Compile Include="Data\Buffer\CharacterPropertyModifierTypes.cs" />
+    <Compile Include="Data\Buffer\DamageType.cs" />
+    <Compile Include="Data\Ability\AbilityTree.cs" />
+    <Compile Include="Data\Ability\AbilityTreeNode.cs" />
+    <Compile Include="Data\CharacterSheet\CarriedItem.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterClassTypes.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterLevel.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterDefinition.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterClassDefinition.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterLevelStats.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterStatsRelations.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterStatCoefficient.cs" />
+    <Compile Include="Data\CharacterSheet\CharacterStatTypes.cs" />
+    <Compile Include="Data\CharacterSheet\GlobalCharacterProperties.cs" />
+    <Compile Include="Data\DataAction.cs" />
+    <Compile Include="Data\Database.cs" />
+    <Compile Include="Data\DataCondition.cs" />
+    <Compile Include="Data\InteractiveDialog\InteractiveDialogLine.cs" />
+    <Compile Include="Data\InteractiveDialog\InteractiveDialogPackage.cs" />
+    <Compile Include="Data\InteractiveDialog\ShoppingInteractiveDialog.cs" />
+    <Compile Include="Data\Item\ItemCategories.cs" />
+    <Compile Include="Data\Item\ItemDefinition.cs" />
+    <Compile Include="Data\Item\ItemSubCategories.cs" />
+    <Compile Include="Data\Quest\QuestCategories.cs" />
+    <Compile Include="Data\Quest\QuestDefinition.cs" />
+    <Compile Include="Base.cs" />
+    <Compile Include="DialogGroupTitle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogGroupTitle.Designer.cs">
+      <DependentUpon>DialogGroupTitle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InteractiveDialogInputForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InteractiveDialogInputForm1.Designer.cs">
+      <DependentUpon>InteractiveDialogInputForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InteractiveDialogInputForm2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InteractiveDialogInputForm2.Designer.cs">
+      <DependentUpon>InteractiveDialogInputForm2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Quest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Quest.Designer.cs">
+      <DependentUpon>Quest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestDialogInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestDialogInputForm.Designer.cs">
+      <DependentUpon>QuestDialogInputForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="QuestTitleInputForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QuestTitleInputForm.Designer.cs">
+      <DependentUpon>QuestTitleInputForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="DialogGroupTitle.resx">
+      <DependentUpon>DialogGroupTitle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractiveDialogInputForm1.resx">
+      <DependentUpon>InteractiveDialogInputForm1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InteractiveDialogInputForm2.resx">
+      <DependentUpon>InteractiveDialogInputForm2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Quest.resx">
+      <DependentUpon>Quest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestDialogInputForm.resx">
+      <DependentUpon>QuestDialogInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="QuestTitleInputForm.resx">
+      <DependentUpon>QuestTitleInputForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="rpg_db.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
